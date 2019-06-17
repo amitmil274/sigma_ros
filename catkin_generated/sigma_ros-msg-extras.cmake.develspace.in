@@ -1,0 +1,2 @@
+set(sigma_ros_MESSAGE_FILES "/home/raven/bgu_raven_comp/src/sigma_ros/msg/haptic_device.msg;/home/raven/bgu_raven_comp/src/sigma_ros/msg/haptic_commands.msg")
+set(sigma_ros_SERVICE_FILES "")
