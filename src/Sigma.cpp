@@ -77,9 +77,15 @@ void* Sigma::gravity_process(void)
 			//	msg_proc = false;
 			//	oldGripForce = gripForce;
 		}
+
 		// retrieve wrist joints
 
-
+		for (int id=0;id++;id<2)
+		{
+			force[id].setZero();
+			torque[id].setZero();
+			fGripper[id] = 0;
+		}
 		// compute joint torques as appropriate
 		//		    for (int i=1; i<7; i++) {
 		//		      if (lock[i])
