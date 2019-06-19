@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_SOURCE_DIR = /home/bgusigma/amit_raven/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_BINARY_DIR = /home/bgusigma/amit_raven/src
 
 # Utility rule file for sigma_ros_genlisp.
 
@@ -63,10 +63,10 @@ sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/build: sigma_ros_genlisp
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/build
 
 sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/clean:
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && $(CMAKE_COMMAND) -P CMakeFiles/sigma_ros_genlisp.dir/cmake_clean.cmake
+	cd /home/bgusigma/amit_raven/src/sigma_ros && $(CMAKE_COMMAND) -P CMakeFiles/sigma_ros_genlisp.dir/cmake_clean.cmake
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/clean
 
 sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/depend:
-	cd /home/raven/bgu_raven_comp/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raven/bgu_raven_comp/src /home/raven/bgu_raven_comp/src/sigma_ros /home/raven/bgu_raven_comp/src /home/raven/bgu_raven_comp/src/sigma_ros /home/raven/bgu_raven_comp/src/sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bgusigma/amit_raven/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bgusigma/amit_raven/src /home/bgusigma/amit_raven/src/sigma_ros /home/bgusigma/amit_raven/src /home/bgusigma/amit_raven/src/sigma_ros /home/bgusigma/amit_raven/src/sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/depend
 

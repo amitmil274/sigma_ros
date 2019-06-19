@@ -42,10 +42,10 @@ void* Sigma::gravity_process(void)
 	Run++;
 	for (int id=0;id<2;id++)
 	{
-		drdStart(ID[id]);
-		drdRegulatePos  (lock_position,ID[id]);
-		drdRegulateRot  (lock_orientation,ID[id]);
-		drdRegulateGrip (lock_grasp,ID[id]);
+		//drdStart(ID[id]);
+		//	drdRegulatePos  (lock_position,ID[id]);
+		//	drdRegulateRot  (lock_orientation,ID[id]);
+		//	drdRegulateGrip (lock_grasp,ID[id]);
 		dhdSetForceAndTorqueAndGripperForce (0.0, 0.0, 0.0,  // force
 				0.0, 0.0, 0.0,  // torque
 				0.0,ID[id]);
@@ -53,38 +53,80 @@ void* Sigma::gravity_process(void)
 	// enable force
 
 	// haptic loop
-	while (ros::ok()) {
+	while (ros::ok())
+	{
+		for (int id=0;id<2;id++)
+		{
+			//		if (dhdSetForceAndTorqueAndGripperForce (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ID[id]) < DHD_NO_ERROR)
+			//							{
+			//								printf ("error: cannot set force (%s)\n", dhdErrorGetLastStr());
+			//								Run = 0;
+			//							}
+			//	ROS_INFO("setting zero");
+
+			force[id].setZero();
+			torque[id].setZero();
+			fGripper[id] = 0.0;
+			if (lock_position)
+			{
+				force[id] = - KP * position[id];
+				double normf;
+				if ((normf = force[id].length()) > MAXF) force[id] *= MAXF/normf;
+				force[id]  -= KVP * velposition[id];
+				//	ROS_INFO("setting lock pos");
+
+			}
+			if (lock_orientation)
+			{
+				tf::Quaternion qTemp;
+				curr_ori[id].transpose().getRotation(qTemp);
+				torque[id] = curr_ori[id] * (KR * qTemp.getAngle() * qTemp.getAxis());
+				double normt;
+				if (( normt = torque[id].length()) > MAXT) torque[id] *= MAXT/normt;
+				torque[id] -= KWR * velorientation[id];
+				//ROS_INFO("lock_ori");
+			}
+			if (lock_grasp)
+			{
+				fGripper[id]  = - KG * (gripper[id] - 0.015);
+				if (fGripper[id] >  MAXG) fGripper[id] =  MAXG;
+				if (fGripper[id] < -MAXG) fGripper[id] = -MAXG;
+				fGripper[id]   -= KVG * velgripper[id];
+				//ROS_INFO("lock_grasp");
+
+			}
+			if (dhdSetForceAndTorqueAndGripperForce (double(force[id].x()), double(force[id].y()), double(force[id].z()),double(torque[id].x()), double(torque[id].y()), double(torque[id].z()), double(fGripper[id]),ID[id])<DHD_NO_ERROR)             // gripper force
+				ROS_INFO("error: cannot set force");
+		}
 		//	if(!msg_new)
-		if (!force_feedback)
-		{
-			for (int id=0;id<2;id++)
-				if (dhdSetForceAndTorqueAndGripperForce (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ID[id]) < DHD_NO_ERROR)
-				{
-					printf ("error: cannot set force (%s)\n", dhdErrorGetLastStr());
-					Run = 0;
-				}
-		}
-		else
-		{
-			msg_new = false;
-			//	msg_proc = true;
-			for (int id=0;id<2;id++)
-				if (dhdSetForceAndTorqueAndGripperForce (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, gripForce[id]*2, ID[id]) < DHD_NO_ERROR);
-			//		{
-			//		printf ("error: cannot set force (%s)\n", dhdErrorGetLastStr());
-			//		Run = 0;
-			//		}
-			//	msg_proc = false;
-			//	oldGripForce = gripForce;
-		}
+		//		if (!force_feedback)
+		//		{
+		//			for (int id=0;id<2;id++)
+		//				if (dhdSetForceAndTorqueAndGripperForce (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ID[id]) < DHD_NO_ERROR)
+		//				{
+		//					printf ("error: cannot set force (%s)\n", dhdErrorGetLastStr());
+		//					Run = 0;
+		//				}
+		//		}
+		//		else
+		//		{
+		//			msg_new = false;
+		//			//	msg_proc = true;
+		//			for (int id=0;id<2;id++)
+		//				if (dhdSetForceAndTorqueAndGripperForce (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, gripForce[id]*2, ID[id]) < DHD_NO_ERROR);
+		//			//		{
+		//			//		printf ("error: cannot set force (%s)\n", dhdErrorGetLastStr());
+		//			//		Run = 0;
+		//			//		}
+		//			//	msg_proc = false;
+		//			//	oldGripForce = gripForce;
+		//		}
 
 		// retrieve wrist joints
 
 		for (int id=0;id++;id<2)
 		{
-			force[id].setZero();
-			torque[id].setZero();
-			fGripper[id] = 0;
+
 		}
 		// compute joint torques as appropriate
 		//		    for (int i=1; i<7; i++) {
@@ -99,18 +141,21 @@ void* Sigma::gravity_process(void)
 		//		                                                              jointTorque[3], jointTorque[4], jointTorque[5],
 		//																	  jointTorque[6]);
 		if (lock_position)
+		{
+			//ROS_INFO("lock_pos");
+
 			for (int id=0;id++;id<2)
 			{
 				force[id] - KP * position[id];
 				double normf;
 				if ((normf = force[id].length()) > MAXF) force[id] *= MAXF/normf;
-				force[id]  -= KVP * velposition[id];
+				//force[id]  -= KVP * velposition[id];
 
 				//	fX[id] = - KP * px[id];
 				//fY[id] = - KP * py[id];
 				//fZ[id] = - KP * pz[id];
 			}
-
+		}
 		if (lock_orientation)
 			for (int id=0;id++;id<2)
 			{
@@ -119,7 +164,8 @@ void* Sigma::gravity_process(void)
 				torque[id] = curr_ori[id] * (KR * qTemp.getAngle() * qTemp.getAxis());
 				double normt;
 				if (( normt = torque[id].length()) > MAXT) torque[id] *= MAXT/normt;
-				torque[id] -= KWR * velorientation[id];
+				//torque[id] -= KWR * velorientation[id];
+				ROS_INFO("lock_ori");
 			}
 		if (lock_grasp)
 			for (int id=0;id++;id<2)
@@ -127,7 +173,8 @@ void* Sigma::gravity_process(void)
 				fGripper[id]  = - KG * (gripper[id] - 0.015);
 				if (fGripper[id] >  MAXG) fGripper[id] =  MAXG;
 				if (fGripper[id] < -MAXG) fGripper[id] = -MAXG;
-				fGripper[id]   -= KVG * velgripper[id];
+				//fGripper[id]   -= KVG * velgripper[id];
+				ROS_INFO("lock_grasp");
 
 			}
 		// compute wrist centering torque
@@ -153,10 +200,17 @@ void* Sigma::gravity_process(void)
 		//   fGripper[id]   -= KVG * v[6];
 
 		// apply centering force with damping
-		for (int id=0;id++;id<2)
-			dhdSetForceAndTorqueAndGripperForce (force[id].x(), force[id].y(), force[id].z(),  // force
-					torque[id].x(), torque[id].y(), torque[id].z(),  // torque
-					fGripper[id],ID[id]);             // gripper force
+		//ROS_INFO("setting force");
+
+		//		for (int id=0;id++;id<2)
+		//		{
+		//			ROS_INFO("setting force");
+		//
+		//			if (dhdSetForceAndTorqueAndGripperForce (double(force[id].x()), double(force[id].y()), double(force[id].z()),  // force
+		//					double(torque[id].x()), double(torque[id].y()), double(torque[id].z()),  // torque
+		//							double(fGripper[id]),ID[id])<DHD_NO_ERROR)             // gripper force
+		//				ROS_INFO("error: cannot set force");
+		//		}
 		//		printf ("[%d] %s:  grip (%+0.03f) m  |  freq [%0.02f kHz]\r", id, dhdGetSystemName(ID[0]), gripForce, dhdGetComFreq (ID[id]));
 	}
 	// close the connection
@@ -247,7 +301,12 @@ void Sigma::callback_sigma(std_msgs::Float32 msg)
 void Sigma::callback_haptic(haptic_commands msg)
 {
 	// (1) save the updated raven_state
+	ROS_INFO("haptic callback");
 	lock_orientation = msg.lock_orientation;
+	lock_grasp = msg.lock_grasp;
+	lock_position = msg.lock_position;
+
+
 	if (lock_orientation)
 	{
 		lock[3] = lock[4] = lock[5] = true;
@@ -257,7 +316,6 @@ void Sigma::callback_haptic(haptic_commands msg)
 	else
 		lock[3] = lock[4] = lock[5] = false;
 
-	lock_position = msg.lock_position;
 	if (lock_position)
 	{
 		lock[0] = lock[1] = lock[2] = true;
@@ -266,7 +324,6 @@ void Sigma::callback_haptic(haptic_commands msg)
 	}
 	else
 		lock[0] = lock[1] = lock[2] = false;
-	lock_grasp = msg.lock_grasp;
 	if (lock_grasp)
 	{
 		lock[6] = true;
@@ -354,6 +411,7 @@ bool Sigma::init_ros(int argc, char** argv)
 	static ros::NodeHandle n;
 
 	sigma_subscriber = n.subscribe("chatter",1,&Sigma::callback_sigma,this);
+	haptic_subscriber = n.subscribe("haptic_commands",1,&Sigma::callback_haptic,this);
 
 	sigma_publisher = n.advertise<haptic_device>("haptic_msg", 1);
 	return true;

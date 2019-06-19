@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_SOURCE_DIR = /home/bgusigma/amit_raven/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_BINARY_DIR = /home/bgusigma/amit_raven/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raven/bgu_raven_comp/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/raven/bgu_raven_comp/src/CMakeFiles /home/raven/bgu_raven_comp/src/sigma_ros/CMakeFiles/progress.marks
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raven/bgu_raven_comp/src/CMakeFiles 0
+	cd /home/bgusigma/amit_raven/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/bgusigma/amit_raven/src/CMakeFiles /home/bgusigma/amit_raven/src/sigma_ros/CMakeFiles/progress.marks
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bgusigma/amit_raven/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/clean
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/preinstall
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/preinstall
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raven/bgu_raven_comp/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bgusigma/amit_raven/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_genpy.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_genpy.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_genpy.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_genpy.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ sigma_ros_genpy: sigma_ros/CMakeFiles/sigma_ros_genpy.dir/rule
 
 # fast build rule for target.
 sigma_ros_genpy/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_genpy.dir/build.make sigma_ros/CMakeFiles/sigma_ros_genpy.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_genpy.dir/build.make sigma_ros/CMakeFiles/sigma_ros_genpy.dir/build
 .PHONY : sigma_ros_genpy/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ sigma_ros_gennodejs: sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/rule
 
 # fast build rule for target.
 sigma_ros_gennodejs/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/build.make sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/build.make sigma_ros/CMakeFiles/sigma_ros_gennodejs.dir/build
 .PHONY : sigma_ros_gennodejs/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ sigma_ros_generate_messages_cpp: sigma_ros/CMakeFiles/sigma_ros_generate_message
 
 # fast build rule for target.
 sigma_ros_generate_messages_cpp/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_cpp.dir/build
 .PHONY : sigma_ros_generate_messages_cpp/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_geneus.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_geneus.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_geneus.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_geneus.dir/rule
 
 # Convenience name for target.
@@ -222,12 +222,12 @@ sigma_ros_geneus: sigma_ros/CMakeFiles/sigma_ros_geneus.dir/rule
 
 # fast build rule for target.
 sigma_ros_geneus/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_geneus.dir/build.make sigma_ros/CMakeFiles/sigma_ros_geneus.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_geneus.dir/build.make sigma_ros/CMakeFiles/sigma_ros_geneus.dir/build
 .PHONY : sigma_ros_geneus/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ sigma_ros_generate_messages_py: sigma_ros/CMakeFiles/sigma_ros_generate_messages
 
 # fast build rule for target.
 sigma_ros_generate_messages_py/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_py.dir/build
 .PHONY : sigma_ros_generate_messages_py/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/rule
 .PHONY : sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ _sigma_ros_generate_messages_check_deps_haptic_commands: sigma_ros/CMakeFiles/_s
 
 # fast build rule for target.
 _sigma_ros_generate_messages_check_deps_haptic_commands/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/build.make sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/build.make sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_commands.dir/build
 .PHONY : _sigma_ros_generate_messages_check_deps_haptic_commands/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ sigma_ros_generate_messages_eus: sigma_ros/CMakeFiles/sigma_ros_generate_message
 
 # fast build rule for target.
 sigma_ros_generate_messages_eus/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_eus.dir/build
 .PHONY : sigma_ros_generate_messages_eus/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -282,12 +282,12 @@ sigma_ros_generate_messages: sigma_ros/CMakeFiles/sigma_ros_generate_messages.di
 
 # fast build rule for target.
 sigma_ros_generate_messages/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages.dir/build
 .PHONY : sigma_ros_generate_messages/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/rule
 .PHONY : sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/rule
 
 # Convenience name for target.
@@ -297,12 +297,12 @@ _sigma_ros_generate_messages_check_deps_haptic_device: sigma_ros/CMakeFiles/_sig
 
 # fast build rule for target.
 _sigma_ros_generate_messages_check_deps_haptic_device/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/build.make sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/build.make sigma_ros/CMakeFiles/_sigma_ros_generate_messages_check_deps_haptic_device.dir/build
 .PHONY : _sigma_ros_generate_messages_check_deps_haptic_device/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -312,12 +312,12 @@ sigma_ros_generate_messages_nodejs: sigma_ros/CMakeFiles/sigma_ros_generate_mess
 
 # fast build rule for target.
 sigma_ros_generate_messages_nodejs/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/build
 .PHONY : sigma_ros_generate_messages_nodejs/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/rule
 
 # Convenience name for target.
@@ -327,12 +327,12 @@ sigma_ros_gencpp: sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/rule
 
 # fast build rule for target.
 sigma_ros_gencpp/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_gencpp.dir/build
 .PHONY : sigma_ros_gencpp/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_node.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_node.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_node.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_node.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/rule
 
 # fast build rule for target.
 sigma_ros_node/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/build
 .PHONY : sigma_ros_node/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -357,12 +357,12 @@ sigma_ros_generate_messages_lisp: sigma_ros/CMakeFiles/sigma_ros_generate_messag
 
 # fast build rule for target.
 sigma_ros_generate_messages_lisp/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_generate_messages_lisp.dir/build
 .PHONY : sigma_ros_generate_messages_lisp/fast
 
 # Convenience name for target.
 sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/rule:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/rule
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f CMakeFiles/Makefile2 sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/rule
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/rule
 
 # Convenience name for target.
@@ -372,7 +372,7 @@ sigma_ros_genlisp: sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/rule
 
 # fast build rule for target.
 sigma_ros_genlisp/fast:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/build
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/build.make sigma_ros/CMakeFiles/sigma_ros_genlisp.dir/build
 .PHONY : sigma_ros_genlisp/fast
 
 src/Sigma.o: src/Sigma.cpp.o
@@ -381,7 +381,7 @@ src/Sigma.o: src/Sigma.cpp.o
 
 # target to build an object file
 src/Sigma.cpp.o:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o
 .PHONY : src/Sigma.cpp.o
 
 src/Sigma.i: src/Sigma.cpp.i
@@ -390,7 +390,7 @@ src/Sigma.i: src/Sigma.cpp.i
 
 # target to preprocess a source file
 src/Sigma.cpp.i:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.i
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.i
 .PHONY : src/Sigma.cpp.i
 
 src/Sigma.s: src/Sigma.cpp.s
@@ -399,7 +399,7 @@ src/Sigma.s: src/Sigma.cpp.s
 
 # target to generate assembly for a file
 src/Sigma.cpp.s:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.s
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.s
 .PHONY : src/Sigma.cpp.s
 
 src/sigma_ros_node.o: src/sigma_ros_node.cpp.o
@@ -408,7 +408,7 @@ src/sigma_ros_node.o: src/sigma_ros_node.cpp.o
 
 # target to build an object file
 src/sigma_ros_node.cpp.o:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o
 .PHONY : src/sigma_ros_node.cpp.o
 
 src/sigma_ros_node.i: src/sigma_ros_node.cpp.i
@@ -417,7 +417,7 @@ src/sigma_ros_node.i: src/sigma_ros_node.cpp.i
 
 # target to preprocess a source file
 src/sigma_ros_node.cpp.i:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.i
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.i
 .PHONY : src/sigma_ros_node.cpp.i
 
 src/sigma_ros_node.s: src/sigma_ros_node.cpp.s
@@ -426,7 +426,7 @@ src/sigma_ros_node.s: src/sigma_ros_node.cpp.s
 
 # target to generate assembly for a file
 src/sigma_ros_node.cpp.s:
-	cd /home/raven/bgu_raven_comp/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.s
+	cd /home/bgusigma/amit_raven/src && $(MAKE) -f sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.s
 .PHONY : src/sigma_ros_node.cpp.s
 
 # Help Target
@@ -473,6 +473,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raven/bgu_raven_comp/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bgusigma/amit_raven/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

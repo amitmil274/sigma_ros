@@ -1,8 +1,8 @@
-# Install script for directory: /home/raven/bgu_raven_comp/src/sigma_ros
+# Install script for directory: /home/bgusigma/amit_raven/src/sigma_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/raven/bgu_raven_comp/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bgusigma/amit_raven/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,55 +34,55 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros/msg" TYPE FILE FILES
-    "/home/raven/bgu_raven_comp/src/sigma_ros/msg/haptic_device.msg"
-    "/home/raven/bgu_raven_comp/src/sigma_ros/msg/haptic_commands.msg"
+    "/home/bgusigma/amit_raven/src/sigma_ros/msg/haptic_device.msg"
+    "/home/bgusigma/amit_raven/src/sigma_ros/msg/haptic_commands.msg"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros/cmake" TYPE FILE FILES "/home/raven/bgu_raven_comp/src/sigma_ros/catkin_generated/installspace/sigma_ros-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros/cmake" TYPE FILE FILES "/home/bgusigma/amit_raven/src/sigma_ros/catkin_generated/installspace/sigma_ros-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/raven/bgu_raven_comp/devel/include/sigma_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/bgusigma/amit_raven/devel/include/sigma_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/raven/bgu_raven_comp/devel/share/roseus/ros/sigma_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/bgusigma/amit_raven/devel/share/roseus/ros/sigma_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/raven/bgu_raven_comp/devel/share/common-lisp/ros/sigma_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/bgusigma/amit_raven/devel/share/common-lisp/ros/sigma_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/raven/bgu_raven_comp/devel/lib/python2.7/dist-packages/sigma_ros")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/bgusigma/amit_raven/devel/lib/python2.7/dist-packages/sigma_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/raven/bgu_raven_comp/devel/lib/python2.7/dist-packages/sigma_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/bgusigma/amit_raven/devel/lib/python2.7/dist-packages/sigma_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/raven/bgu_raven_comp/src/sigma_ros/catkin_generated/installspace/sigma_ros.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bgusigma/amit_raven/src/sigma_ros/catkin_generated/installspace/sigma_ros.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros/cmake" TYPE FILE FILES "/home/raven/bgu_raven_comp/src/sigma_ros/catkin_generated/installspace/sigma_ros-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros/cmake" TYPE FILE FILES "/home/bgusigma/amit_raven/src/sigma_ros/catkin_generated/installspace/sigma_ros-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros/cmake" TYPE FILE FILES
-    "/home/raven/bgu_raven_comp/src/sigma_ros/catkin_generated/installspace/sigma_rosConfig.cmake"
-    "/home/raven/bgu_raven_comp/src/sigma_ros/catkin_generated/installspace/sigma_rosConfig-version.cmake"
+    "/home/bgusigma/amit_raven/src/sigma_ros/catkin_generated/installspace/sigma_rosConfig.cmake"
+    "/home/bgusigma/amit_raven/src/sigma_ros/catkin_generated/installspace/sigma_rosConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros" TYPE FILE FILES "/home/raven/bgu_raven_comp/src/sigma_ros/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sigma_ros" TYPE FILE FILES "/home/bgusigma/amit_raven/src/sigma_ros/package.xml")
 endif()
 

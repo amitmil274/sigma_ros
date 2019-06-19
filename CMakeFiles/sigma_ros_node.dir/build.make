@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_SOURCE_DIR = /home/bgusigma/amit_raven/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_BINARY_DIR = /home/bgusigma/amit_raven/src
 
 # Include any dependencies generated for this target.
 include sigma_ros/CMakeFiles/sigma_ros_node.dir/depend.make
@@ -59,16 +59,16 @@ include sigma_ros/CMakeFiles/sigma_ros_node.dir/flags.make
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o: sigma_ros/CMakeFiles/sigma_ros_node.dir/flags.make
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o: sigma_ros/src/sigma_ros_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raven/bgu_raven_comp/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o -c /home/raven/bgu_raven_comp/src/sigma_ros/src/sigma_ros_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bgusigma/amit_raven/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o"
+	cd /home/bgusigma/amit_raven/src/sigma_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o -c /home/bgusigma/amit_raven/src/sigma_ros/src/sigma_ros_node.cpp
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.i"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raven/bgu_raven_comp/src/sigma_ros/src/sigma_ros_node.cpp > CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.i
+	cd /home/bgusigma/amit_raven/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bgusigma/amit_raven/src/sigma_ros/src/sigma_ros_node.cpp > CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.i
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.s"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raven/bgu_raven_comp/src/sigma_ros/src/sigma_ros_node.cpp -o CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.s
+	cd /home/bgusigma/amit_raven/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bgusigma/amit_raven/src/sigma_ros/src/sigma_ros_node.cpp -o CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.s
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o.requires:
 
@@ -83,16 +83,16 @@ sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o.provides.build:
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o: sigma_ros/CMakeFiles/sigma_ros_node.dir/flags.make
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o: sigma_ros/src/Sigma.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raven/bgu_raven_comp/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o -c /home/raven/bgu_raven_comp/src/sigma_ros/src/Sigma.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bgusigma/amit_raven/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o"
+	cd /home/bgusigma/amit_raven/src/sigma_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o -c /home/bgusigma/amit_raven/src/sigma_ros/src/Sigma.cpp
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.i"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raven/bgu_raven_comp/src/sigma_ros/src/Sigma.cpp > CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.i
+	cd /home/bgusigma/amit_raven/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bgusigma/amit_raven/src/sigma_ros/src/Sigma.cpp > CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.i
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.s"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raven/bgu_raven_comp/src/sigma_ros/src/Sigma.cpp -o CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.s
+	cd /home/bgusigma/amit_raven/src/sigma_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bgusigma/amit_raven/src/sigma_ros/src/Sigma.cpp -o CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.s
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o.requires:
 
@@ -113,34 +113,34 @@ sigma_ros_node_OBJECTS = \
 # External object files for target sigma_ros_node
 sigma_ros_node_EXTERNAL_OBJECTS =
 
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libroscpp.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librosconsole.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librostime.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libcpp_common.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raven/bgu_raven_comp/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sigma_ros_node.dir/link.txt --verbose=$(VERBOSE)
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/src/sigma_ros_node.cpp.o
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/src/Sigma.cpp.o
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/build.make
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libroscpp.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librosconsole.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/librostime.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /opt/ros/kinetic/lib/libcpp_common.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node: sigma_ros/CMakeFiles/sigma_ros_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bgusigma/amit_raven/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node"
+	cd /home/bgusigma/amit_raven/src/sigma_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sigma_ros_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-sigma_ros/CMakeFiles/sigma_ros_node.dir/build: /home/raven/bgu_raven_comp/devel/lib/sigma_ros/sigma_ros_node
+sigma_ros/CMakeFiles/sigma_ros_node.dir/build: /home/bgusigma/amit_raven/devel/lib/sigma_ros/sigma_ros_node
 
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_node.dir/build
 
@@ -150,10 +150,10 @@ sigma_ros/CMakeFiles/sigma_ros_node.dir/requires: sigma_ros/CMakeFiles/sigma_ros
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_node.dir/requires
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/clean:
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && $(CMAKE_COMMAND) -P CMakeFiles/sigma_ros_node.dir/cmake_clean.cmake
+	cd /home/bgusigma/amit_raven/src/sigma_ros && $(CMAKE_COMMAND) -P CMakeFiles/sigma_ros_node.dir/cmake_clean.cmake
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_node.dir/clean
 
 sigma_ros/CMakeFiles/sigma_ros_node.dir/depend:
-	cd /home/raven/bgu_raven_comp/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raven/bgu_raven_comp/src /home/raven/bgu_raven_comp/src/sigma_ros /home/raven/bgu_raven_comp/src /home/raven/bgu_raven_comp/src/sigma_ros /home/raven/bgu_raven_comp/src/sigma_ros/CMakeFiles/sigma_ros_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bgusigma/amit_raven/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bgusigma/amit_raven/src /home/bgusigma/amit_raven/src/sigma_ros /home/bgusigma/amit_raven/src /home/bgusigma/amit_raven/src/sigma_ros /home/bgusigma/amit_raven/src/sigma_ros/CMakeFiles/sigma_ros_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_node.dir/depend
 

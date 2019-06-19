@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_SOURCE_DIR = /home/bgusigma/amit_raven/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raven/bgu_raven_comp/src
+CMAKE_BINARY_DIR = /home/bgusigma/amit_raven/src
 
 # Utility rule file for sigma_ros_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/progress.make
 
-sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs: /home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js
-sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs: /home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js
+sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs: /home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js
+sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs: /home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js
 
 
-/home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js: sigma_ros/msg/haptic_device.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raven/bgu_raven_comp/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from sigma_ros/haptic_device.msg"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/raven/bgu_raven_comp/src/sigma_ros/msg/haptic_device.msg -Isigma_ros:/home/raven/bgu_raven_comp/src/sigma_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p sigma_ros -o /home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg
+/home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js: sigma_ros/msg/haptic_device.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bgusigma/amit_raven/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from sigma_ros/haptic_device.msg"
+	cd /home/bgusigma/amit_raven/src/sigma_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bgusigma/amit_raven/src/sigma_ros/msg/haptic_device.msg -Isigma_ros:/home/bgusigma/amit_raven/src/sigma_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p sigma_ros -o /home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg
 
-/home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js: sigma_ros/msg/haptic_commands.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raven/bgu_raven_comp/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from sigma_ros/haptic_commands.msg"
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/raven/bgu_raven_comp/src/sigma_ros/msg/haptic_commands.msg -Isigma_ros:/home/raven/bgu_raven_comp/src/sigma_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p sigma_ros -o /home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg
+/home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js: sigma_ros/msg/haptic_commands.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bgusigma/amit_raven/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from sigma_ros/haptic_commands.msg"
+	cd /home/bgusigma/amit_raven/src/sigma_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bgusigma/amit_raven/src/sigma_ros/msg/haptic_commands.msg -Isigma_ros:/home/bgusigma/amit_raven/src/sigma_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p sigma_ros -o /home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg
 
 sigma_ros_generate_messages_nodejs: sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs
-sigma_ros_generate_messages_nodejs: /home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js
-sigma_ros_generate_messages_nodejs: /home/raven/bgu_raven_comp/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js
+sigma_ros_generate_messages_nodejs: /home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_device.js
+sigma_ros_generate_messages_nodejs: /home/bgusigma/amit_raven/devel/share/gennodejs/ros/sigma_ros/msg/haptic_commands.js
 sigma_ros_generate_messages_nodejs: sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/build.make
 
 .PHONY : sigma_ros_generate_messages_nodejs
@@ -80,10 +80,10 @@ sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/build: sigma_ros_gen
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/build
 
 sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/clean:
-	cd /home/raven/bgu_raven_comp/src/sigma_ros && $(CMAKE_COMMAND) -P CMakeFiles/sigma_ros_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/bgusigma/amit_raven/src/sigma_ros && $(CMAKE_COMMAND) -P CMakeFiles/sigma_ros_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/clean
 
 sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/depend:
-	cd /home/raven/bgu_raven_comp/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raven/bgu_raven_comp/src /home/raven/bgu_raven_comp/src/sigma_ros /home/raven/bgu_raven_comp/src /home/raven/bgu_raven_comp/src/sigma_ros /home/raven/bgu_raven_comp/src/sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bgusigma/amit_raven/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bgusigma/amit_raven/src /home/bgusigma/amit_raven/src/sigma_ros /home/bgusigma/amit_raven/src /home/bgusigma/amit_raven/src/sigma_ros /home/bgusigma/amit_raven/src/sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sigma_ros/CMakeFiles/sigma_ros_generate_messages_nodejs.dir/depend
 
