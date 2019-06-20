@@ -19,8 +19,10 @@
 #include <queue>
 #include "std_msgs/Float32.h"
 #include "sigma_ros/haptic_device.h"
-#include "haptic_commands.h"
+#include "sigma_ros/haptic_commands.h"
+#include <math.h>
 
+# define M_PI           3.14159265358979323846  /* pi */
 using namespace sigma_ros;
 using namespace std;
 

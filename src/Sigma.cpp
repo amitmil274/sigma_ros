@@ -2,7 +2,6 @@
 #include "/usr/include/dhdc.h"				//AMIT
 #include "/usr/include/drdc.h"	
 
-
 int *ID;
 int  Run = 0;
 Sigma::Sigma()
@@ -79,11 +78,23 @@ void* Sigma::gravity_process(void)
 			if (lock_orientation)
 			{
 				tf::Quaternion qTemp;
-				curr_ori[id].transpose().getRotation(qTemp);
-				torque[id] = curr_ori[id] * (KR * qTemp.getAngle() * qTemp.getAxis());
+//				curr_ori[id].transpose().getRotation(qTemp);
+//				torque[id] = curr_ori[id] * (KR * qTemp.getAngle() * qTemp.getAxis());
 				double normt;
+//				if (( normt = torque[id].length()) > MAXT) torque[id] *= MAXT/normt;
+//				torque[id] -= KWR * velorientation[id];
+
+				tf::Quaternion qTemp2;
+				tf::Matrix3x3 mTemp2;
+				mTemp2.setIdentity();
+				mTemp2.setEulerYPR(0,M_PI/4,0);
+				tf::Matrix3x3 delta_ori;
+				delta_ori = mTemp2 * curr_ori[id];
+				tfScalar r,p,y;
+				delta_ori.getRPY(r,p,y);
+				torque[id].setValue(-r*KR,-p*KR,-y*KR);
 				if (( normt = torque[id].length()) > MAXT) torque[id] *= MAXT/normt;
-				torque[id] -= KWR * velorientation[id];
+						torque[id] -= KWR * velorientation[id];
 				//ROS_INFO("lock_ori");
 			}
 			if (lock_grasp)
@@ -301,7 +312,7 @@ void Sigma::callback_sigma(std_msgs::Float32 msg)
 void Sigma::callback_haptic(haptic_commands msg)
 {
 	// (1) save the updated raven_state
-	ROS_INFO("haptic callback");
+	//ROS_INFO("haptic callback");
 	lock_orientation = msg.lock_orientation;
 	lock_grasp = msg.lock_grasp;
 	lock_position = msg.lock_position;
