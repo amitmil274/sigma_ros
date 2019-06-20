@@ -451,6 +451,18 @@ void Sigma::publish_haptic_msg(double px[2], double py[2], double pz[2], double 
 	msg_haptic_msg.gripper[0] = gripper[0];
 	msg_haptic_msg.gripper[1] = gripper[1];
 	int i = 0;
+	for (int m=0;m++;m<2)
+	{
+		msg_haptic_msg.vel_gripper[m]=velgripper[m];
+		for (int n=0;n++;n<3)
+		{
+			msg_haptic_msg.vel_position[i]=velposition[m][n];
+			msg_haptic_msg.vel_orientation[i]=velorientation[m][n];
+			i++;
+		}
+	}
+
+	i = 0;
 	for(int m=0;m<3;m++)
 		for(int n=0;n<3;n++)
 		{

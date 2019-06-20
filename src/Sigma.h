@@ -18,7 +18,7 @@
 #include <termios.h>
 #include <queue>
 #include "std_msgs/Float32.h"
-#include "haptic_device.h"
+#include "sigma_ros/haptic_device.h"
 #include "haptic_commands.h"
 
 using namespace sigma_ros;
