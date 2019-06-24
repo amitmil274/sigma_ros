@@ -56,7 +56,7 @@ class Sigma
 
 		bool msg_new = false;
 		bool msg_proc = false;
-
+		bool update_force = false;
 		bool lock_position = false;
 		bool lock_orientation  = false;
 		bool lock_grasp  = false;
@@ -90,7 +90,7 @@ class Sigma
 
 		  	double gripper[2]={0,0};
 		  	double prevgripper[2]={0,0};
-		  	double fGripper[2]={0,0};
+		  	double grip_force[2]={0,0};
 
 		  	double orimat0[3][3];
 		  	double orimat1[3][3];
