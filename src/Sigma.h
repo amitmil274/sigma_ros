@@ -28,13 +28,13 @@ using namespace std;
 
 #define KP    100.0
 #define KVP    10.0
-#define MAXF    4.0
+#define MAXF    10.0
 #define KR      0.3
 #define KWR     0.02
 #define MAXT    0.1
 #define KG    100.0
 #define KVG     5.0
-#define MAXG    1.0
+#define MAXG    10.0
 
 class Sigma
 {

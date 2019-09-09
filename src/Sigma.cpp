@@ -17,7 +17,6 @@ void* Sigma::gravity_process(void)
 	// try and open requested dgevice
 	for (int id=0;id<2;id++)
 	{
-		ID[id] = dhdOpenID (id);
 
 		//printf ("error: cannot open device (%s)\n", dhdErrorGetLastStr());
 		if (ID[id] < 0) {
@@ -234,7 +233,25 @@ void Sigma::init_haptic()
 		ID[i] = i;
 		// dhdStartThread (GravityThread, &(ID[i]), DHD_THREAD_PRIORITY_HIGH);
 	}
+	for (int i=0; i<count; i++ ) {
+	int tempID = dhdOpenID (i);
+	if (dhdIsLeftHanded(tempID))
+	{
+		dhdClose(tempID);
+		ID[1] = dhdOpenID (i);
+		printf("left arm is %d\n",i);
+	}
+	else
+	{
+		dhdClose(tempID);
+		ID[0] = dhdOpenID(i);
+		printf("right arm is %d\n",i);
+	}
+			// identify each device
 
+	}
+	for (int id = 0; id<count; id++)
+	printf ("[%d] %s device detected\n", id, dhdGetSystemName(ID[id]));
 	// wait for all threads to start (each thread increments the 'Run' variable by 1 when ready)
 	//while (Run >= 0 && Run < count) dhdSleep (0.1);
 	if (Run < 0) {
@@ -242,9 +259,7 @@ void Sigma::init_haptic()
 		return;
 	}
 
-	// identify each device
-	for (int i=0;i <count; i++) printf ("[%d] %s device detected\n", i, dhdGetSystemName(ID[i]));
-	printf ("\n");
+
 
 	// display instructions
 	printf ("press 'q' to quit\n");
